@@ -1,16 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
-:root{
-  --black-color:rgb(1, 1, 1);
-  --gray-color:rgb(103, 103, 103);
-  --blue-color-300:#8072e6;
-  --color:hwb(255 50% 0%);
-  --white-color:white;
-  --secondary-black:rgb(43, 43, 43);
-  --third-black-color:rgb(31, 31, 31);
-  --light-gray:rgb(174, 173, 173);
+
+:root {
+  --black-color: rgb(1, 1, 1);
+  --gray-color: rgb(103, 103, 103);
+  --blue-color-300: #8072e6;
+  --color: hwb(255 50% 0%);
+  --white-color: white;
+  --secondary-black: rgb(43, 43, 43);
+  --third-black-color: rgb(31, 31, 31);
+  --light-gray: rgb(174, 173, 173);
+  /* --container-background-color: #e6e3ff; */
+  --container-background-color: #e7e5fd;
 }
-*{
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -21,34 +25,163 @@
 
   transition: all .2s linear;
 }
-body{
-  background-color: rgb(229, 228, 228);
+
+body {
+  background-color: rgb(117, 117, 117);
 }
-html{
+
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 7px;
   overflow-x: hidden;
 }
-.slider{
-  /* height: 90vh; */
+
+/* ------------------------------------------------plateFormHeaderSection------------------------------------------------------------------- */
+.SeprationTwoDiv{
+  height: .2rem;
+  width: 80%;
+  display: block;
+  color: var(--black-color);
+}
+.plateFormHeaderContainer {
+  display: flex;
+  justify-content: center;
+ margin-left: 20%;
+  width: 100%;
+  flex-direction: column;
+}
+.plateFormHeaderSection .UpperPart{
+display: flex;
+}
+.plateFormHeaderSection .UpperPart .firstOne{
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--black-color);
+  margin-left: 5rem;
+}
+.plateFormHeaderSection .UpperPart .firstOne span{
+display: block;
+margin-left: 5rem;
+}
+.plateFormHeaderSection .UpperPart .reportText{
+  margin-left: 1rem;
+  font-weight: 500;
+  font-size: 5rem;
+}
+.plateFormHeaderSection .lowerPart{
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+  /* margin-top: 1rem; */
+}
+.plateFormHeaderSection .lowerPart p:first-child{
+  font-size: 5rem;
+  font-weight: 500;
+}
+.plateFormHeaderSection .lowerPart p:nth-child(2){
+  display: flex;
+  padding-left: 7%;
+  font-size: 1.1rem;
+  padding-right: 1rem;
   margin-top: 1rem;
+  flex-basis: 462px;
+  color: var(--gray-color);
+}
+
+/* -------------------------------------------------------PlatFormShowCaseSection--------------------------------------------- */
+.PlatFormShowCaseSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.PlatFormShowCaseSection .plateFormShowCaseContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--white-color);
+  display: inline-block;
+  border-radius: 1rem;
+  padding: 1rem 2rem;
+}
+.showCase{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2rem;
   margin-bottom: 2rem;
 }
+.TypeOfSection{
+  margin-top: .8rem;
+  font-size: 1.2rem;
+}
+/* -------------------------------------GetStartSection----------------------------------- */
+.GetStartSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60vh;
+  padding: 3rem;
+  background-color: var(--container-background-color);
+}
+
+.GetStartContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.GetStartContainer h1 {
+  padding-bottom: 1rem;
+  font-size: 3rem;
+}
+.GetStartContainer h4{
+  display: flex;
+  font-size: 1.5rem;
+  color: rgb(93, 93, 93);
+  padding-bottom: 1rem;
+}
+
+.GetStartButton button {
+  margin-top: 2rem;
+  padding: 1.2rem 2rem;
+  color: var(--white-color);
+  border-radius: .5rem;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  background-color: var(--black-color);
+}
+.GetStartButton button:hover{
+  background-color: var(--third-black-color);
+}
+
+.GetStartButton button span {
+  font-size: 1.4rem;
+  margin-right: .5rem;
+}
+
+
+
 /* ---------------------Footer_Container----------------------------- */
-.footerSection{
+.footerSection {
   /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
 }
-.footerIconsSection{
+
+.footerIconsSection {
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--secondary-black);
   padding: 1rem 1rem;
 }
-.footerIconsSection .socialMediaIcons{
+
+.footerIconsSection .socialMediaIcons {
   margin-right: 2rem;
   background-color: var(--white-color);
   height: 2.5rem;
@@ -56,100 +189,118 @@ html{
   text-align: center;
   border-radius: 50%;
 }
-.footerIconsSection .socialMediaIcons i{
+
+.footerIconsSection .socialMediaIcons i {
   padding-top: .6rem;
   font-size: 1.3rem;
 }
 
 /* -------------------------------------footerLinksSection-------------------------- */
-.footerLinksContainer{
+.footerLinksContainer {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
-.footerLinksSection{
+
+.footerLinksSection {
   width: 100%;
   background-color: var(--third-black-color);
   padding: 2rem 4rem;
 }
-.footerLogoSection{
+
+.footerLogoSection {
   flex-basis: 25%;
 }
-.footerLogoSection img{
+
+.footerLogoSection img {
   padding-left: 1rem;
   width: 15rem;
 }
-.footerLogoCaption p{
+
+.footerLogoCaption p {
   padding-top: 1rem;
   font-size: .8rem;
   letter-spacing: .1rem;
   line-height: 1.2rem;
   text-align: center;
-  color:var(--light-gray);
+  color: var(--light-gray);
 }
-.footerLinks{
+
+.footerLinks {
   display: flex;
   flex-direction: column;
 }
-.footerLinks p{
+
+.footerLinks p {
   text-align: center;
 }
-.footerLinks a{
- text-align: center;
+
+.footerLinks a {
+  text-align: center;
   padding-top: .5rem;
   font-size: .9rem;
   color: var(--light-gray);
 }
-.footerLinks a:hover{
-  color:var(--blue-color-300);
+
+.footerLinks a:hover {
+  color: var(--blue-color-300);
   text-decoration: underline;
 }
-.footerLinks p{
+
+.footerLinks p {
   text-transform: uppercase;
   color: var(--white-color);
   font-weight: 700;
   font-size: .9rem;
 }
-.footerSuggestion{
+
+.footerSuggestion {
   border: 2px solid var(--blue-color-300);
   background-color: transparent;
 }
-.footerSuggestionSection p{
+
+.footerSuggestionSection p {
   font-weight: 600;
   font-size: 1.2rem;
   color: var(--light-gray);
 }
-.footerSuggestionSection textarea{
- margin-top: 1rem;
+
+.footerSuggestionSection textarea {
+  margin-top: 1rem;
   color: var(--light-gray);
   border-radius: .5rem;
   padding: .5rem 1rem;
   font-size: 1rem;
 }
+
 /* -----------------------------------------------footerInfoSection---------------------------------------------------- */
-.footerInfoSection{
+.footerInfoSection {
   padding: 1.2rem;
   width: 100%;
   background-color: var(--black-color);
-  color:var(--white-color)
+  color: var(--white-color)
 }
-.footerInfoContainer{
+
+.footerInfoContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-.footerVisionSection{
+
+.footerVisionSection {
   width: 100%;
   padding: 0 25%;
 }
-.footerVisionSection h4{
+
+.footerVisionSection h4 {
   display: flex;
   letter-spacing: .1rem;
-    justify-content: center;
+  justify-content: center;
 }
-.footerInfoContainer p{
+
+.footerInfoContainer p {
   font-weight: 700;
   font-size: 1rem;
   letter-spacing: .05rem;
@@ -157,13 +308,15 @@ html{
   text-align: center;
   padding-bottom: 1rem;
 }
-.Sepration{
+
+.Sepration {
   height: .2rem;
   width: 8%;
   border-radius: 1rem;
   background-color: var(--blue-color-300);
 }
-.copyrightSection{
+
+.copyrightSection {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -171,7 +324,8 @@ html{
   align-items: center;
   margin-top: 1rem;
 }
-.copyRight{
+
+.copyRight {
   font-size: .8rem;
   color: var(--light-gray);
   font-weight: 100;
@@ -182,40 +336,70 @@ html{
 
 
 /* ------------------------------------------------------------------ReviewCardSection-------------------------------------------------------- */
-
-.ReviewCardSection{
+.ReviewSection{
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+.ReviewContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 100%;
 }
-.ReviewCard{
+.ReviewContainer p{
+font-size: 2.7rem;
+}
+.ReviewContainer .text{
+  margin-left: 40%;
+  font-weight: 600;
+  line-height: .9;
+}
+.ReviewContainer .text:nth-child(2){
+  margin-left: 47%;
+}
+.ReviewContainer .text:nth-child(3){
+  margin-left: 55%;
+}
+.ReviewCardSection {
+  width: 100%;
+}
+
+.ReviewCard {
   padding: 1rem 1rem;
   border: 2px solid var(--light-gray);
   border-radius: 1rem;
   text-align: center;
   width: 100%;
 }
-.ReviewCard p{
+
+.ReviewCard p {
   font-weight: 600;
   font-size: .8rem;
   letter-spacing: 1px;
 }
-.ReviewCardMentorDetail{
+
+.ReviewCardMentorDetail {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
 }
-.ReviewCardMentorDetail img{
+
+.ReviewCardMentorDetail img {
   width: 3rem;
-  border-radius:50%;
+  border-radius: 50%;
 }
-.mentorDetail{
+
+.mentorDetail {
   margin-top: .5rem;
   margin-left: 1rem;
 }
-.mentorDetail .mentorName{
+
+.mentorDetail .mentorName {
   font-family: 'Plus Jakarta Sans', sans-serif;
   color: var(--black-color)
 }
-.mentorDetail .rating{
+
+.mentorDetail .rating {
   margin-top: .2rem;
   color: rgb(244, 169, 6);
   font-size: .6rem;

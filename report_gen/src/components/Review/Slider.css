@@ -13,7 +13,10 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* .slider{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+} */
 .swiper {
   width: 55%;
   padding-top: 50px;
