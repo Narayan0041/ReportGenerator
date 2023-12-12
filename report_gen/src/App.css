@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+:root{
+  --black-color:rgb(1, 1, 1);
+  --gray-color:rgb(103, 103, 103);
+  --blue-color-300:#8072e6;
+  --color:hwb(255 50% 0%);
+  --white-color:white;
+  --secondary-black:rgb(43, 43, 43);
+  --third-black-color:rgb(31, 31, 31);
+  --light-gray:rgb(174, 173, 173);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: 'Raleway', sans-serif;
+
+  transition: all .2s linear;
+}
+body{
+  background-color: rgb(229, 228, 228);
+}
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 7px;
+  overflow-x: hidden;
+}
+.slider{
+  margin-top: 5rem;
+}
+/* ---------------------Footer_Container----------------------------- */
+.footerSection{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footerIconsSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-black);
+  padding: 1rem 1rem;
+}
+.footerIconsSection .socialMediaIcons{
+  margin-right: 2rem;
+  background-color: var(--white-color);
+  height: 2.5rem;
+  width: 2.5rem;
+  text-align: center;
+  border-radius: 50%;
+}
+.footerIconsSection .socialMediaIcons i{
+  padding-top: .6rem;
+  font-size: 1.3rem;
+}
+
+/* -------------------------------------footerLinksSection-------------------------- */
+.footerLinksContainer{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.footerLinksSection{
+  width: 100%;
+  background-color: var(--third-black-color);
+  padding: 2rem 4rem;
+}
+.footerLogoSection{
+  flex-basis: 25%;
+}
+.footerLogoSection img{
+  padding-left: 1rem;
+  width: 15rem;
+}
+.footerLogoCaption p{
+  padding-top: 1rem;
+  font-size: .8rem;
+  letter-spacing: .1rem;
+  line-height: 1.2rem;
+  text-align: center;
+  color:var(--light-gray);
+}
+.footerLinks{
+  display: flex;
+  flex-direction: column;
+}
+.footerLinks p{
+  text-align: center;
+}
+.footerLinks a{
+ text-align: center;
+  padding-top: .5rem;
+  font-size: .9rem;
+  color: var(--light-gray);
+}
+.footerLinks a:hover{
+  color:var(--blue-color-300);
+  text-decoration: underline;
+}
+.footerLinks p{
+  text-transform: uppercase;
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: .9rem;
+}
+.footerSuggestion{
+  border: 2px solid var(--blue-color-300);
+  background-color: transparent;
+}
+.footerSuggestionSection p{
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: var(--light-gray);
+}
+.footerSuggestionSection textarea{
+ margin-top: 1rem;
+  color: var(--light-gray);
+  border-radius: .5rem;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+}
+/* -----------------------------------------------footerInfoSection---------------------------------------------------- */
+.footerInfoSection{
+  padding: 1.2rem;
+  width: 100%;
+  background-color: var(--black-color);
+  color:var(--white-color)
+}
+.footerInfoContainer{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.footerVisionSection{
+  width: 100%;
+  padding: 0 25%;
+}
+.footerVisionSection h4{
+  display: flex;
+  letter-spacing: .1rem;
+    justify-content: center;
+}
+.footerInfoContainer p{
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: .05rem;
+  margin-top: .5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.Sepration{
+  height: .2rem;
+  width: 8%;
+  border-radius: 1rem;
+  background-color: var(--blue-color-300);
+}
+.copyrightSection{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1rem;
+}
+.copyRight{
+  font-size: .8rem;
+  color: var(--light-gray);
+  font-weight: 100;
+}
+
+
+
+
+
+/* ------------------------------------------------------------------ReviewCardSection-------------------------------------------------------- */
+#root{
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 30px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+
+.ReviewCard{
+  padding: 1rem 1rem;
+  border: 2px solid var(--light-gray);
+  border-radius: 1rem;
+  text-align: center;
+  width: 30%;
+}
+.ReviewCardMentorDetail{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.ReviewCardMentorDetail img{
+  border-radius:50%;
+}
+.mentorDetail{
+  margin-left: 1rem;
+}
+.mentorDetail .mentorName{
+  color: var(--blue-color-300);
+}
+.mentorDetail .rating{
+  margin-top: .2rem;
+  color: rgb(244, 169, 6);
+  font-size: .7rem;
+}
