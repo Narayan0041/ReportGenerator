@@ -10,8 +10,9 @@
   --secondary-black: rgb(43, 43, 43);
   --third-black-color: rgb(31, 31, 31);
   --light-gray: rgb(174, 173, 173);
-  /* --container-background-color: #e6e3ff; */
-  --container-background-color: #e7e5fd;
+  --dark-gray-color: rgb(66, 66, 66);
+  --container-background-color: #e6e3ff;
+  /* --container-background-color: #dddafd; */
 }
 
 * {
@@ -27,7 +28,8 @@
 }
 
 body {
-  background-color: rgb(117, 117, 117);
+  overflow-x: hidden;
+  /* background-color: rgb(117, 117, 117); */
 }
 
 html {
@@ -36,49 +38,241 @@ html {
   overflow-x: hidden;
 }
 
-/* ------------------------------------------------plateFormHeaderSection------------------------------------------------------------------- */
-.SeprationTwoDiv{
-  height: .2rem;
-  width: 80%;
-  display: block;
+
+/* ----------------------------------------------------------------------NavbarSection-------------------------------------------------------------- */
+.NavbrContainer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding:.5rem 4rem 1rem 4rem ;
+  z-index: 100;
+  background-color: rgb(231, 231, 231);
+}
+
+.NavbarDifferentSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+.NavbarDifferentSection a{
+  margin-right: 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--dark-gray-color);
+}
+.NavbarDifferentSection a:hover{
+  color: var(--blue-color-300);
+}
+.NavbarDifferentSection button {
+  color: var(--white-color);
+  width: 10rem;
+  font-size: 1.1rem;
+  font-weight: 800;
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  background-color: var(--black-color);
+}
+
+/* -------------------------------------------------------HeroPageConatiner-------------------------------------------------------------- */
+.HeroPageSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 8rem 1rem 8rem;
+}
+.HeroPageConatiner{
+  margin-top: 7rem;
+}
+.HeroPageTextContent{
+  display: flex;
+  flex-basis: 50%;
+}
+.HeroPageImageContent {
+  display: flex;
+    flex-basis: 40%;
+}
+.HeroTextSection p:first-child{
+  font-size: 4.1rem;
+  letter-spacing: .1rem;
+  font-weight: 600;
+}
+.HeroTextSection p:nth-child(2){
+  margin-top: 1rem;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+/* -------------------------------------------ShowCaseCardContainer----------------------------------------------------------------------- */
+.showCaseHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  padding: 0rem 6rem;
+}
+
+.showCaseHeaderContainer .showCaseHeaderLeftSection p {
+  font-size: 4rem;
+  font-weight: 600;
+  padding-left: 2rem;
   color: var(--black-color);
 }
+
+.showCaseHeaderContainer .showCaseHeaderRightSection p {
+  padding-left: 6rem;
+  font-size: 1.2rem;
+  color: var(--black-color);
+  line-height: 2rem;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+
+/* --------------------------------------------------------------- */
+.ShowCasePageSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0rem 8rem 0rem 3rem;
+}
+
+.ShowCasePageSection .ImageSection {
+  display: flex;
+  flex-basis: 20%;
+}
+
+.ShowCasePageSection .CardsSection {
+  display: flex;
+  flex-basis: 65%;
+}
+
+.ShowCaseCardContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.Box {
+  margin-top: 1rem;
+  margin-right: 1rem;
+  height: 20vh;
+  letter-spacing: .1rem;
+  padding: 1rem 4rem 2rem 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--white-color);
+  border-radius: 1rem;
+}
+
+.UpperSection,
+.middleSection,
+.LastSection {
+  display: flex;
+}
+
+.UpperSectionBoxFirst {
+  background-color: #6c9adf;
+}
+
+.UpperSectionBoxSecond {
+  background-color: #62449b;
+}
+
+.middleSectiobBox {
+  padding-right: 10rem;
+  background-color: #61b9b3;
+}
+
+.LastBoxSectionFirst {
+  background-color: #7f85a8;
+}
+
+.LastBoxSectionSecond {
+  background-color: #917cba;
+}
+
+
+
+/* ------------------------------------------------plateFormHeaderSection------------------------------------------------------------------- */
+.SeprationTwoDiv {
+  height: .1px;
+  width: 70%;
+  display: block;
+  background-color: rgb(33, 33, 33);
+}
+
+.DifferentCategory {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.DifferentCategoryContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.DifferentCategoryContainer p {
+  color: var(--dark-gray-color);
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
 .plateFormHeaderContainer {
   display: flex;
   justify-content: center;
- margin-left: 20%;
+  margin-left: 20%;
   width: 100%;
   flex-direction: column;
 }
-.plateFormHeaderSection .UpperPart{
-display: flex;
+
+.plateFormHeaderSection .UpperPart {
+  display: flex;
 }
-.plateFormHeaderSection .UpperPart .firstOne{
+
+.plateFormHeaderSection .UpperPart .firstOne {
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--black-color);
   margin-left: 5rem;
 }
-.plateFormHeaderSection .UpperPart .firstOne span{
-display: block;
-margin-left: 5rem;
+
+.plateFormHeaderSection .UpperPart .firstOne span {
+  display: block;
+  margin-left: 5rem;
 }
-.plateFormHeaderSection .UpperPart .reportText{
+
+.plateFormHeaderSection .UpperPart .reportText {
   margin-left: 1rem;
   font-weight: 500;
   font-size: 5rem;
 }
-.plateFormHeaderSection .lowerPart{
+
+.plateFormHeaderSection .lowerPart {
   display: flex;
   justify-content: flex-end;
   flex-direction: row-reverse;
   /* margin-top: 1rem; */
 }
-.plateFormHeaderSection .lowerPart p:first-child{
+
+.plateFormHeaderSection .lowerPart p:first-child {
   font-size: 5rem;
   font-weight: 500;
 }
-.plateFormHeaderSection .lowerPart p:nth-child(2){
+
+.plateFormHeaderSection .lowerPart p:nth-child(2) {
   display: flex;
   padding-left: 7%;
   font-size: 1.1rem;
@@ -89,13 +283,14 @@ margin-left: 5rem;
 }
 
 /* -------------------------------------------------------PlatFormShowCaseSection--------------------------------------------- */
-.PlatFormShowCaseSection{
+.PlatFormShowCaseSection {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.PlatFormShowCaseSection .plateFormShowCaseContainer{
+
+.PlatFormShowCaseSection .plateFormShowCaseContainer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -104,17 +299,57 @@ margin-left: 5rem;
   border-radius: 1rem;
   padding: 1rem 2rem;
 }
-.showCase{
+
+.showCase {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+  padding: 0 6rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-.TypeOfSection{
+
+.TypeOfSection {
   margin-top: .8rem;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
+
+
+/* -------------------------------------------IntroPosterSection---------------------------------------------- */
+.IntroPosterSection {
+  height: 80vh;
+  width: 100%;
+  border-radius: 2rem;
+  padding: 3rem;
+}
+
+.IntroPosterSection .IntroPosterContainer {
+  background: linear-gradient(rgba(215, 243, 252, 0.5), rgba(217, 243, 252, 0.5)), url('https://assets.flowcvassets.com/landing/victory-2000.webp');
+  background-size: 120%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  padding-top: 13%;
+  background-position: left 98%;
+}
+
+.IntroPosterContainer p {
+  display: flex;
+  width: 50%;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 2rem;
+  font-weight: 800;
+  color: var(--third-black-color);
+}
+
+.IntroButton {
+  position: relative;
+  bottom: 1.5rem;
+  padding-left: 12rem;
+}
+
 /* -------------------------------------GetStartSection----------------------------------- */
 .GetStartSection {
   display: flex;
@@ -137,7 +372,8 @@ margin-left: 5rem;
   padding-bottom: 1rem;
   font-size: 3rem;
 }
-.GetStartContainer h4{
+
+.GetStartContainer h4 {
   display: flex;
   font-size: 1.5rem;
   color: rgb(93, 93, 93);
@@ -154,7 +390,8 @@ margin-left: 5rem;
   cursor: pointer;
   background-color: var(--black-color);
 }
-.GetStartButton button:hover{
+
+.GetStartButton button:hover {
   background-color: var(--third-black-color);
 }
 
@@ -336,30 +573,36 @@ margin-left: 5rem;
 
 
 /* ------------------------------------------------------------------ReviewCardSection-------------------------------------------------------- */
-.ReviewSection{
+.ReviewSection {
   margin-top: 3rem;
   margin-bottom: 4rem;
 }
-.ReviewContainer{
+
+.ReviewContainer {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: 100%;
 }
-.ReviewContainer p{
-font-size: 2.7rem;
+
+.ReviewContainer p {
+  font-size: 2.7rem;
 }
-.ReviewContainer .text{
+
+.ReviewContainer .text {
   margin-left: 40%;
   font-weight: 600;
   line-height: .9;
 }
-.ReviewContainer .text:nth-child(2){
+
+.ReviewContainer .text:nth-child(2) {
   margin-left: 47%;
 }
-.ReviewContainer .text:nth-child(3){
+
+.ReviewContainer .text:nth-child(3) {
   margin-left: 55%;
 }
+
 .ReviewCardSection {
   width: 100%;
 }
