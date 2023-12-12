@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
 :root{
   --black-color:rgb(1, 1, 1);
   --gray-color:rgb(103, 103, 103);
@@ -29,11 +30,13 @@ html{
   overflow-x: hidden;
 }
 .slider{
-  margin-top: 5rem;
+  /* height: 90vh; */
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 /* ---------------------Footer_Container----------------------------- */
 .footerSection{
-  position: fixed;
+  /* position: fixed; */
   bottom: 0;
   left: 0;
   width: 100%;
@@ -179,36 +182,21 @@ html{
 
 
 /* ------------------------------------------------------------------ReviewCardSection-------------------------------------------------------- */
-#root{
-  height: 100%;
-}
 
-.swiper {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-.swiper-slide {
-  background-position: center;
-  background-size: cover;
-  width: 300px;
-  height: 30px;
-}
-
-.swiper-slide img {
-  display: block;
+.ReviewCardSection{
   width: 100%;
 }
-
-
-
 .ReviewCard{
   padding: 1rem 1rem;
   border: 2px solid var(--light-gray);
   border-radius: 1rem;
   text-align: center;
-  width: 30%;
+  width: 100%;
+}
+.ReviewCard p{
+  font-weight: 600;
+  font-size: .8rem;
+  letter-spacing: 1px;
 }
 .ReviewCardMentorDetail{
   margin-top: 1rem;
@@ -216,16 +204,19 @@ html{
   justify-content: center;
 }
 .ReviewCardMentorDetail img{
+  width: 3rem;
   border-radius:50%;
 }
 .mentorDetail{
+  margin-top: .5rem;
   margin-left: 1rem;
 }
 .mentorDetail .mentorName{
-  color: var(--blue-color-300);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: var(--black-color)
 }
 .mentorDetail .rating{
   margin-top: .2rem;
   color: rgb(244, 169, 6);
-  font-size: .7rem;
+  font-size: .6rem;
 }
