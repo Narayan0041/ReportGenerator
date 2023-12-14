@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ShowCase from '../ShowCase/ShowCase'
 import PlatForm from '../PlatFormContainer/PlatForm'
 import Review from '../Review/Review'
@@ -8,20 +9,27 @@ import IntroPoster from '../Poster/IntroPoster';
 import Navbar from '../Navbar/Navbar';
 import "../../index.css"
 import HeroSection from '../HeroSection/HeroSection';
+import AdSliderSection from '../AdSection/AdSilderSection';
 
 export default function Home() {
     return (
         <div>
-            <Navbar/>
-            <HeroSection/>
-            <ShowCase/>
+            <Navbar />
+            <Router>
+                <Routes>
+                    <Route path='/' element={<HeroSection/>} />
+                </Routes>
+            </Router>
+            {/* <HeroSection />
+            <ShowCase />
             <div className="slider">
                 <PlatForm />
-                <IntroPoster/>
+                <AdSliderSection />
+                <IntroPoster />
                 <Review />
             </div>
             <GetStartComponent />
-            <Footer/>
+            <Footer /> */}
         </div>
     )
 }

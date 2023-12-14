@@ -1,6 +1,6 @@
-
 import React from 'react'
-
+import { Link } from "react-router-dom";
+import HeroSection from '../HeroSection/HeroSection';
 export default function Navbar() {
     return (
         <div>
@@ -10,7 +10,8 @@ export default function Navbar() {
                         <img src='https://techpaathshala.com/assets/images/general/footer-logo.svg' width={220} alt='LogoImage' />
                     </div>
                         <div className='NavbarDifferentSection'>
-                            <a href=''>Home</a>
+                            {/* <a href=''>Home</a> */}
+                            <Link to="/" element={<HeroSection/>}>Home</Link>
                             <a href=''>About</a>
                             <a href=''>Category</a>
                             <a href=''>Contact</a>

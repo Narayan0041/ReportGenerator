@@ -7,7 +7,7 @@ export default function InsertDifferentValue() {
   return ( 
         ArrayListData.map((item,index)=>{
 return(
-    <DifferentCategory text={item.text} />
+    <DifferentCategory text={item.text} key={index} />
 )
         })
     

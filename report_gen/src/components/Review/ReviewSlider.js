@@ -1,5 +1,6 @@
 // import React, { useRef, useState } from 'react';
 // Import Swiper React components
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
@@ -33,7 +34,7 @@ export default function ReviewSlider() {
        {
         ArrayOfData.map((item,index)=>{
          return(
-          <SwiperSlide key={index}>
+          <SwiperSlide key={index} >
            <ReviewCards Review={item.Review} image={item.image} mentorName={item.mentorName} rating={item.rating} course={item.course} />
           </SwiperSlide>
          )

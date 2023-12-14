@@ -18,7 +18,7 @@ export default function FooterLinksSection() {
                             <a href='/'>HOME</a>
                             <a href='/'>About</a>
                             <a href='/'>Contact</a>
-                            <a href='/'><i class="fa-regular fa-envelope"></i> Terms of Service</a>
+                            <a href='/'><i className="fa-regular fa-envelope"></i> Terms of Service</a>
                             <a href='/'>Privacy Policy</a>
                         </div>
                         <div className="footerLinks">
@@ -26,7 +26,7 @@ export default function FooterLinksSection() {
                             <a href='/'>HOME</a>
                             <a href='/'>About</a>
                             <a href='/'>Contact</a>
-                            <a href='/'> <i class="fa-regular fa-envelope"></i> Terms of Service</a>
+                            <a href='/'> <i className="fa-regular fa-envelope"></i> Terms of Service</a>
                             <a href='/'>Privacy Policy</a>
                         </div>
                        <div className='footerSuggestionSection'>

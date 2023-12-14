@@ -16,7 +16,7 @@ export default function ReviewCards({Review ,image ,mentorName ,course ,rating})
                   </div>
                   <div className='mentorDetail'>
                     <h4 className='mentorName'>{mentorName}</h4>
-                    <p className='rating'><ispan class="fa-solid fa-star"></ispan><span class="fa-solid fa-star"></span><span class="fa-solid fa-star"></span>{rating}<i class="fa-solid fa-star-half"></i></p>
+                    <p className='rating'><ispan className="fa-solid fa-star"></ispan><span className="fa-solid fa-star"></span><span className="fa-solid fa-star"></span>{rating}<i className="fa-solid fa-star-half"></i></p>
                     <h5>{course}</h5>
                   </div>
                 </div>
