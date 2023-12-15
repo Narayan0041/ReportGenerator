@@ -1,5 +1,4 @@
 import React from 'react'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ShowCase from '../ShowCase/ShowCase'
 import PlatForm from '../PlatFormContainer/PlatForm'
 import Review from '../Review/Review'
@@ -11,16 +10,12 @@ import "../../index.css"
 import HeroSection from '../HeroSection/HeroSection';
 import AdSliderSection from '../AdSection/AdSilderSection';
 
+
 export default function Home() {
     return (
         <div>
             <Navbar />
-            <Router>
-                <Routes>
-                    <Route path='/' element={<HeroSection/>} />
-                </Routes>
-            </Router>
-            {/* <HeroSection />
+            <HeroSection />
             <ShowCase />
             <div className="slider">
                 <PlatForm />
@@ -29,7 +24,7 @@ export default function Home() {
                 <Review />
             </div>
             <GetStartComponent />
-            <Footer /> */}
+            <Footer />
         </div>
     )
 }

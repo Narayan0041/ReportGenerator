@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export default function FooterLinksSection() {
     return (
@@ -18,8 +19,8 @@ export default function FooterLinksSection() {
                             <a href='/'>HOME</a>
                             <a href='/'>About</a>
                             <a href='/'>Contact</a>
-                            <a href='/'><i className="fa-regular fa-envelope"></i> Terms of Service</a>
-                            <a href='/'>Privacy Policy</a>
+                          <Link to="terms&condition">Terms of Servic</Link>
+                            <Link to="privacypolicy">Privacy Policy</Link>
                         </div>
                         <div className="footerLinks">
                             <p>Sections</p>

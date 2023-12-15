@@ -11,7 +11,7 @@ export default function Navbar() {
                     </div>
                         <div className='NavbarDifferentSection'>
                             {/* <a href=''>Home</a> */}
-                            <Link to="/" element={<HeroSection/>}>Home</Link>
+                            {/* <Link to="/" element={<HeroSection/>}>Home</Link> */}
                             <a href=''>About</a>
                             <a href=''>Category</a>
                             <a href=''>Contact</a>

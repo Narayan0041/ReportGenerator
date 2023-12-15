@@ -647,3 +647,80 @@ html {
   color: rgb(244, 169, 6);
   font-size: .6rem;
 }
+
+/* -----------------------------------------------------TermAndCoditinSection--------------------------------------------------------------- */
+.TermAndCoditinSection{
+  margin-top: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.TCHerder{
+font-size: 4rem;
+letter-spacing: .3rem;
+font-weight: 500;
+}
+.textSectionTC{
+  background-image: linear-gradient(to right, rgba(237, 237, 237, 0.8), rgba(237, 237, 237, 0.8)), url("../public/image/t&c.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-attachment: fixed; /* This keeps the background fixed */
+  margin-top: .5rem;
+  padding: 2rem 12rem;
+}
+.textSectionTC h2{
+  margin-top: 1.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.textSectionTC p{
+  font-size:1rem ;
+  margin-top: 1.5rem;
+  font-weight: 500;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+}
+/* ---------------------------------------------------------PrivacyPolicyTextSection-------------------------------------------------- */
+.PrivacyPolicyTextSection{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 22vh;
+  width: 100%;
+  padding: 2rem 12rem;
+}
+.ppHeaderSection p{
+  font-size: 4rem;
+  font-weight: 500;
+}
+.ppTextSection{
+  background: linear-gradient(to right, rgba(244, 244, 244, 0.4), rgba(238, 238, 238, 0.4)), url("../public/image/pp.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-attachment: fixed;
+  margin-top: .5rem;
+  padding: 2rem 12rem;
+  margin-bottom: 5rem;
+}
+.ppTextSection h3{
+  margin-top: 3.5rem;
+  font-size: 1.3rem;
+  text-align: center;
+  line-height: 2rem;
+  font-weight: 500;
+  padding: 0 2rem 0 5rem;
+}
+.ppTextSection h2{
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.ppTextSection p{
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
